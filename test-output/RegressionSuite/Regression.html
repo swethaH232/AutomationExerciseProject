@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 16 12:32:22 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>61 seconds (61620 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tests.ui.SignupTest.verifySignup()'><b>verifySignup</b><br>Test class: com.tests.ui.SignupTest<br>Parameters: TC_REG_004, Swetha, swetha2820@gmail.com, Test123, Swetha, H, Chennai, India, Tamil Nadu, Chennai, 600001, 9876543210, SUCCESS</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.SignupTest@198b6731</td></tr>
+<tr>
+<td title='com.tests.ui.SignupTest.verifySignup()'><b>verifySignup</b><br>Test class: com.tests.ui.SignupTest<br>Parameters: TC_REG_003, Swetha, existinguser@gmail.com, Test123, Swetha, H, Chennai, India, Tamil Nadu, Chennai, 600001, 9876543210, FAILURE</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.SignupTest@198b6731</td></tr>
+<tr>
+<td title='com.tests.ui.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: com.tests.ui.LoginTest<br>Parameters: TC_LOGIN_002, invalidemail, Test123, FAILURE</td>
+<td></td>
+<td>6</td>
+<td>com.tests.ui.LoginTest@4b2bac3f</td></tr>
+<tr>
+<td title='com.tests.ui.LogoutTest.verifyLogoutFlow()'><b>verifyLogoutFlow</b><br>Test class: com.tests.ui.LogoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.LogoutTest@3d285d7e</td></tr>
+<tr>
+<td title='com.tests.ui.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: com.tests.ui.LoginTest<br>Parameters: TC_LOGIN_005, swetha12345@gmail.com, Test123, SUCCESS</td>
+<td></td>
+<td>4</td>
+<td>com.tests.ui.LoginTest@4b2bac3f</td></tr>
+<tr>
+<td title='com.tests.ui.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: com.tests.ui.LoginTest<br>Parameters: TC_LOGIN_003, swetha12345@gmail.com, Wrong123, FAILURE</td>
+<td></td>
+<td>6</td>
+<td>com.tests.ui.LoginTest@4b2bac3f</td></tr>
+<tr>
+<td title='com.tests.ui.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: com.tests.ui.LoginTest<br>Parameters: TC_LOGIN_004, invaliduser@gmail.com, Test123, FAILURE</td>
+<td></td>
+<td>7</td>
+<td>com.tests.ui.LoginTest@4b2bac3f</td></tr>
+<tr>
+<td title='com.tests.ui.CartTest.verifyCartFlow()'><b>verifyCartFlow</b><br>Test class: com.tests.ui.CartTest</td>
+<td></td>
+<td>2</td>
+<td>com.tests.ui.CartTest@bcec361</td></tr>
+<tr>
+<td title='com.tests.ui.SignupTest.verifySignup()'><b>verifySignup</b><br>Test class: com.tests.ui.SignupTest<br>Parameters: TC_REG_001, Swetha, , Test123, Swetha, H, Chennai, India, Tamil Nadu, Chennai, 600001, 9876543210, FAILURE</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.SignupTest@198b6731</td></tr>
+<tr>
+<td title='com.tests.ui.PaymentTest.verifyPaymentFlow()'><b>verifyPaymentFlow</b><br>Test class: com.tests.ui.PaymentTest<br>Parameters: TC_PAY_003, Swetha H, 4.11111E+15, , 12, 2030, FAILURE</td>
+<td></td>
+<td>0</td>
+<td>com.tests.ui.PaymentTest@302552ec</td></tr>
+<tr>
+<td title='com.tests.ui.PaymentTest.verifyPaymentFlow()'><b>verifyPaymentFlow</b><br>Test class: com.tests.ui.PaymentTest<br>Parameters: TC_PAY_005, Swetha H, 4.11111E+15, 123, 12, 2030, SUCCESS</td>
+<td></td>
+<td>6</td>
+<td>com.tests.ui.PaymentTest@302552ec</td></tr>
+<tr>
+<td title='com.tests.ui.LoginTest.verifyLogin()'><b>verifyLogin</b><br>Test class: com.tests.ui.LoginTest<br>Parameters: TC_LOGIN_001, , Test123, FAILURE</td>
+<td></td>
+<td>6</td>
+<td>com.tests.ui.LoginTest@4b2bac3f</td></tr>
+<tr>
+<td title='com.tests.ui.SignupTest.verifySignup()'><b>verifySignup</b><br>Test class: com.tests.ui.SignupTest<br>Parameters: TC_REG_002, Swetha, invalidemail, Test123, Swetha, H, Chennai, India, Tamil Nadu, Chennai, 600001, 9876543210, FAILURE</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.SignupTest@198b6731</td></tr>
+<tr>
+<td title='com.tests.ui.PaymentTest.verifyPaymentFlow()'><b>verifyPaymentFlow</b><br>Test class: com.tests.ui.PaymentTest<br>Parameters: TC_PAY_002, Swetha H, , 123, 12, 2030, FAILURE</td>
+<td></td>
+<td>0</td>
+<td>com.tests.ui.PaymentTest@302552ec</td></tr>
+<tr>
+<td title='com.tests.ui.PaymentTest.verifyPaymentFlow()'><b>verifyPaymentFlow</b><br>Test class: com.tests.ui.PaymentTest<br>Parameters: TC_PAY_004, Swetha H, 4.11111E+15, 123, , 2030, FAILURE</td>
+<td></td>
+<td>0</td>
+<td>com.tests.ui.PaymentTest@302552ec</td></tr>
+<tr>
+<td title='com.tests.ui.PaymentTest.verifyPaymentFlow()'><b>verifyPaymentFlow</b><br>Test class: com.tests.ui.PaymentTest<br>Parameters: TC_PAY_001, , 4.11111E+15, 123, 12, 2030, FAILURE</td>
+<td></td>
+<td>0</td>
+<td>com.tests.ui.PaymentTest@302552ec</td></tr>
+<tr>
+<td title='com.tests.ui.CheckoutTest.verifyCheckoutFlow()'><b>verifyCheckoutFlow</b><br>Test class: com.tests.ui.CheckoutTest</td>
+<td></td>
+<td>1</td>
+<td>com.tests.ui.CheckoutTest@26794848</td></tr>
+<tr>
+<td title='com.tests.ui.ProductTest.verifyAddProductsToCart()'><b>verifyAddProductsToCart</b><br>Test class: com.tests.ui.ProductTest</td>
+<td></td>
+<td>6</td>
+<td>com.tests.ui.ProductTest@4e08711f</td></tr>
+</table><p>
+</body>
+</html>
